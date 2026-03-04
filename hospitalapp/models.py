@@ -14,3 +14,14 @@ class Patient(models.Model):
 
     def __str__(self):
         return self.name
+
+class Doctor(models.Model):
+    name = models.CharField(max_length = 20)
+    email = models.EmailField()
+    phonenumber = models.CharField(max_length = 10)
+    areaofspecialisation = models.TextField()
+    
+    
+
+    def __str__(self):
+        return self.name

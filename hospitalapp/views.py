@@ -9,3 +9,7 @@ def home(request):
 
 def starter(request):
     return render(request, 'starter-page.html')    
+
+
+def about(request):
+    return render(request, 'about.html')        
