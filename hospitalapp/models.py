@@ -19,9 +19,22 @@ class Doctor(models.Model):
     name = models.CharField(max_length = 20)
     email = models.EmailField()
     phonenumber = models.CharField(max_length = 10)
-    areaofspecialisation = models.TextField()
+    areaofspecialisation = models.CharField(max_length = 20)
     
     
+
+    def __str__(self):
+        return self.name
+
+class MyAppointment(models.Model):
+    name = models.CharField(max_length = 20)
+    email = models.EmailField()
+    phone = models.CharField(max_length = 20)
+    datetime = models.DateTimeField()
+    department = models.CharField(max_length = 20)
+    doctor = models.CharField(max_length = 20)
+    message = models.TextField()
+
 
     def __str__(self):
         return self.name
