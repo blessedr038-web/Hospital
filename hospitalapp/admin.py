@@ -5,3 +5,4 @@ from hospitalapp.models import *
 admin.site.register(Patient)
 admin.site.register(Doctor)
 admin.site.register(MyAppointment)
+admin.site.register(Transaction)
